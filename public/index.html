@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="En">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" href="../assets/images/RealEstateConsultantLogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSONBeautifier</title>
+    <link rel="stylesheet" href="./build/tailwind.css"/>
+  </head>
+  <body class="text-slate-800 font-['Vazir'] h-screen">
+    <header class="contianer p-1 flex justify-center lg:justify-start items-center border-b-2 border-b-gray-100 border-solid shadow mb-6">
+    <img src="../assets/images/slogo.webp" alt="logo">
+      <nav class="hidden lg:block">
+        <ul class="flex ml-4">
+          <li><a href="" class="px-1 md:px-3 transition-all ease-in-out duration-500 hover:text-blue-400">JSON Formatter</a></li>
+          <li><a href="" class="px-1 md:px-3 transition-all ease-in-out duration-500 hover:text-blue-400">XML Formatter</a></li>
+          <li><a href="" class="px-1 md:px-3 transition-all ease-in-out duration-500 hover:text-blue-400">SEO Inspector</a></li>
+          <li><a href="" class="px-1 md:px-3 transition-all ease-in-out duration-500 hover:text-blue-400">Calculator</a></li>
+          <li><a href="" class="px-1 md:px-3 transition-all ease-in-out duration-500 hover:text-blue-400">JSON Beautifier</a></li>
+          <li><a href="" class="px-1 md:px-3 transition-all ease-in-out duration-500 hover:text-blue-400">Recent Links</a></li>
+          <li><a href="" class="px-1 md:px-3 transition-all ease-in-out duration-500 hover:text-blue-400">Sitemap</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+    <div>
+      <h1 class="text-2xl font-bold tracking-wider">JSON Beautifier</h1>
+    </div>
+   <div class="flex flex-col md:flex-row gap-3">
+     <div class="w-full md:w-1/2 flex h-80">
+    <textarea id="input" class="max-w-full max-h-80"></textarea>
+     </div>
+     <div class="w-full md:w-1/2 flex h-80">
+      <div class="w-full border-2 border-gray-200 border-solid rounded p-2">
+    <details>
+      <summary id="summary">Object(0)</summary>
+      <ul id="result"></ul>
+    </details> 
+    <div id="error" class="text-red-500 font-bold"></div>
+      </div>
+     </div>
+   </div> 
+  <div class="w-full flex justify-center items-center my-4">
+    <input type="button" value="Beautify" onclick="beautify()" class="py-2 px-12 text-lg bg-blue-500 text-white rounded cursor-pointer transition-all ease-in-out duration-500 hover:bg-white hover:text-blue-500 hover:border-2 hover:border-blue-500 hover:border-solid">
+  </div>  
+    </main>
+
+
+    <script src="../src/js/main.js"></script>
+
+  </body>
+</html>
